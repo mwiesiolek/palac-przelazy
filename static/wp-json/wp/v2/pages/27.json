@@ -1,1 +1,104 @@
-{"id":27,"date":"2021-05-13T08:39:37","date_gmt":"2021-05-13T06:39:37","guid":{"rendered":"https:\/\/palac-przelazy.pl\/?page_id=27"},"modified":"2022-06-02T15:53:50","modified_gmt":"2022-06-02T13:53:50","slug":"kontakt","status":"publish","type":"page","link":"https:\/\/palac-przelazy.pl\/kontakt\/","title":{"rendered":"Kontakt"},"content":{"rendered":"","protected":false},"excerpt":{"rendered":"","protected":false},"author":2,"featured_media":0,"parent":0,"menu_order":0,"comment_status":"closed","ping_status":"closed","template":"","meta":{"site-sidebar-layout":"no-sidebar","site-content-layout":"page-builder","ast-global-header-display":"","ast-main-header-display":"","ast-hfb-above-header-display":"","ast-hfb-below-header-display":"","ast-hfb-mobile-header-display":"","site-post-title":"disabled","ast-breadcrumbs-content":"","ast-featured-img":"disabled","footer-sml-layout":"","theme-transparent-header-meta":"default","adv-header-id-meta":"","stick-header-meta":"default","header-above-stick-meta":"","header-main-stick-meta":"","header-below-stick-meta":""},"_links":{"self":[{"href":"https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/pages\/27"}],"collection":[{"href":"https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/pages"}],"about":[{"href":"https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/types\/page"}],"author":[{"embeddable":true,"href":"https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/users\/2"}],"replies":[{"embeddable":true,"href":"https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/comments?post=27"}],"version-history":[{"count":1,"href":"https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/pages\/27\/revisions"}],"predecessor-version":[{"id":28,"href":"https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/pages\/27\/revisions\/28"}],"wp:attachment":[{"href":"https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/media?parent=27"}],"curies":[{"name":"wp","href":"https:\/\/api.w.org\/{rel}","templated":true}]}}
+{
+  "id": 27,
+  "date": "2021-05-13T08:39:37",
+  "date_gmt": "2021-05-13T06:39:37",
+  "guid": {
+    "rendered": "https:\/\/palac-przelazy.pl\/?page_id=27"
+  },
+  "modified": "2022-06-02T15:53:50",
+  "modified_gmt": "2022-06-02T13:53:50",
+  "slug": "kontakt",
+  "status": "publish",
+  "type": "page",
+  "link": "https:\/\/palac-przelazy.pl\/kontakt\/",
+  "title": {
+    "rendered": "Kontakt"
+  },
+  "content": {
+    "rendered": "",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "",
+    "protected": false
+  },
+  "author": 2,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "site-sidebar-layout": "no-sidebar",
+    "site-content-layout": "page-builder",
+    "ast-global-header-display": "",
+    "ast-main-header-display": "",
+    "ast-hfb-above-header-display": "",
+    "ast-hfb-below-header-display": "",
+    "ast-hfb-mobile-header-display": "",
+    "site-post-title": "disabled",
+    "ast-breadcrumbs-content": "",
+    "ast-featured-img": "disabled",
+    "footer-sml-layout": "",
+    "theme-transparent-header-meta": "default",
+    "adv-header-id-meta": "",
+    "stick-header-meta": "default",
+    "header-above-stick-meta": "",
+    "header-main-stick-meta": "",
+    "header-below-stick-meta": ""
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/pages\/27"
+      }
+    ],
+    "collection": [
+      {
+        "href": "https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/types\/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/users\/2"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/comments?post=27"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/pages\/27\/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 28,
+        "href": "https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/pages\/27\/revisions\/28"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https:\/\/palac-przelazy.pl\/wp-json\/wp\/v2\/media?parent=27"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https:\/\/api.w.org\/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}
