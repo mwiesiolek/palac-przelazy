@@ -1,0 +1,182 @@
+<div class="container">
+  <div class="top">
+    <div class="item"
+         [style]="'background-image: url(/Zrzut-ekranu-2021-06-15-o-12.57.44/Zrzut-ekranu-2021-06-15-o-12.57.44-1536x690.jpg);'">
+      <div></div>
+      <mat-card class="card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title>Turnusy rehabilitacyjne</mat-card-title>
+        </mat-card-header>
+      </mat-card>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content-1">
+      <div class="content-1-1">
+        <img src="/kDSC_7863-1/kDSC_7863-1-768x513.jpg" alt="Drzewka i Pałac"/>
+      </div>
+      <div class="content-1-2">
+        <div>
+          <h3>
+            Pałac Przełazy to pięknie położony obiekt tuż nad samym jeziorem o krystalicznej wodzie. Tutaj szybko
+            odzyskasz utracone siły.
+          </h3>
+        </div>
+        <div>
+          <p>
+            Organizujemy turnusy rehabilitacyjne, również z dofinansowaniem PFRON. Pobyt w naszym pięknie położonym
+            Ośrodku trwa 14 dni, w trakcie których zapewniamy pełne wyżywienie oraz szereg zabiegów rehabilitacyjnych
+            dostosowanych do schorzeń.
+          </p>
+          <p>
+            Rejestr organizatorów turnusów: {{ batch.codes.organiser }} do 19.01.2026r.
+          </p>
+          <p>
+            Rejestr Ośrodków: {{ batch.codes.resort }} do 01.03.2026r.
+          </p>
+          <div>
+            <button routerLink="/kontakt" mat-stroked-button>Zarezerwuj pobyt</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-2">
+      <div>
+        <h1>Terminy turnusów</h1>
+      </div>
+      <div class="desktop">
+        <table>
+          <thead>
+          <tr>
+            <th *ngFor="let header of headers">{{ header }}</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let batchPrice of batchPrices">
+            <td class="cell-id">{{ batchPrice.id }}</td>
+            <td class="cell-item">{{ batchPrice.startDate }}</td>
+            <td class="cell-item">{{ batchPrice.endDate }}</td>
+            <td class="cell-item">{{ batchPrice.pfronParticipant }}</td>
+            <td class="cell-item">{{ batchPrice.pfronCaregiver }}</td>
+            <td class="cell-item">{{ batchPrice.private }}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mobile">
+        <div *ngFor="let batchPrice of batchPrices">
+          <div class="mobile-1">
+            <h4>{{ batchPrice.id }}</h4>
+            <h5>{{ batchPrice.startDate }} - {{ batchPrice.endDate }}</h5>
+          </div>
+          <div class="mobile-1">
+            <div>
+              <p>{{ headers[3] }}</p>
+              <p>{{ batchPrice.pfronParticipant }}</p>
+            </div>
+            <div>
+              <p>{{ headers[4] }}</p>
+              <p>{{ batchPrice.pfronCaregiver }}</p>
+            </div>
+            <div>
+              <p>{{ headers[5] }}</p>
+              <p>{{ batchPrice.private }}</p>
+            </div>
+            <mat-divider></mat-divider>
+          </div>
+        </div>
+      </div>
+      <div class="table-footer">
+        <ul>
+          <li>Dzieci na pobyt prywatny do lat 8 -50% stawki</li>
+          <li>Turnus rozpoczyna się obiadem w dniu przyjazdu a kończy śniadaniem w dniu wyjazdu</li>
+          <li>Istnieje możliwość skorzystania z zabiegów rehabilitacyjnych w ramach NFZ po wcześniejszym dostarczeniu
+            skierowania na zabiegi od lekarza rodzinnego
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-3">
+      <div class="content-3-1">
+        <h3>Rezerwacja</h3>
+        <p>
+          Rezerwacji prosimy dokonywać telefonicznie lub mailowo. Tą drogą mogą Państwo także uzyskać informacje
+          dotyczące
+          dostępności miejsc w wybranych terminach.
+        </p>
+        <p>Tel: <a [href]="batch.tel1.link">{{ batch.tel1.text }}</a></p>
+        <p>Tel: <a [href]="batch.tel2.link">{{ batch.tel2.text }}</a></p>
+        <p>E-Mail: <a [href]="batch.email.link">{{ batch.email.text }}</a></p>
+        <p>
+          Potwierdzeniem dokonanej rezerwacji jest wpłata zadatku w wysokości 500 zł w terminie 5 dni od dnia rezerwacji
+          (opłata rezerwacyjna).
+        </p>
+        <b>Płatności należy dokonać na rachunek</b>
+        <p>
+          {{ bank.name }}
+        </p>
+        <p>{{ bank.number }}</p>
+        <p>Na przelewie należy podać: Imię i nazwisko Gościa i termin turnusu rehabilitacyjnego.</p>
+      </div>
+      <div class="content-3-2">
+        <img src="/kDSC_7934/kDSC_7934-768x1151.jpg" alt="Korytarz"/>
+      </div>
+    </div>
+    <div class="content-4">
+      <div class="content-4-1">
+        <img src="/kDSC_7925/kDSC_7925-768x513.jpg" alt="Pokój i dwa łóżka"/>
+      </div>
+      <div class="content-4-2">
+        <h3>Płatności</h3>
+        <p>Pozostałą kwotę należy wpłacić najpóźniej na 7 dni przed rozpoczęciem turnusu na konto Ośrodka.</p>
+        <b>Płatności należy dokonać na rachunek</b>
+        <p>{{ bank.name }}</p>
+        <p>{{ bank.number }}</p>
+        <p>Na przelewie należy podać: Imię i nazwisko Gościa i termin turnusu rehabilitacyjnego.</p>
+        <p>Płatności za pobyt w Powiatowym Ośrodku Rehabilitacyjno – Wypoczynkowym „Pałac” sp. z o.o. w Przełazach oraz
+          inne świadczone przez Ośrodek usługi dokonuje się z góry za cały zarezerwowany okres pobytu, a w razie nagłego
+          wyjazdu lub skrócenia pobytu, Ośrodek nie dokonuje zwrotu opłaty za zarezerwowany i opłacony wcześniej, a
+          niewykorzystany okres pobytu.
+        </p>
+      </div>
+    </div>
+    <div class="content-5">
+      <div class="content-5-1">
+        <h3>Pobyt</h3>
+        <p>Turnusy rehabilitacyjne trwają 14 dni. Turnus rozpoczyna się obiadem w dniu przyjazdu, a kończy śniadaniem w
+          dniu wyjazdu.
+        </p>
+        <p>Przyjeżdżając na turnus rehabilitacyjny, należy zabrać ze sobą:</p>
+        <ul>
+          <li>orzeczenie o niepełnosprawności</li>
+          <li>aktualne zaświadczenie o stanie zdrowia</li>
+          <li>posiadaną dokumentację medyczną (zdjęcia RTG, badania morfologiczne, karty informacyjne, itp)</li>
+          <li>wygodny strój do ćwiczeń na sali (dres lub szorty, koszulki sportowe) oraz obuwie sportowe</li>
+          <li>strój kąpielowy i klapki</li>
+          <li>szlafrok (opcjonalnie)</li>
+          <li>wygodny strój do spacerów po pięknej okolicy stosowny do pory roku</li>
+        </ul>
+      </div>
+      <div class="content-5-2">
+        <img src="/kDSC_7933-copy/kDSC_7933-copy-768x513.jpg" alt="Pokój i róże">
+      </div>
+    </div>
+    <div class="content-6">
+      <div class="content-6-1">
+        <img src="/kDSC_7803/kDSC_7803-768x513.jpg" alt="Jadalnia">
+      </div>
+      <div class="content-6-2">
+        <h3>Dodatkowe informacje</h3>
+        <ul>
+          <li>Ośrodek posiada ograniczana ilość miejsc postojowych.</li>
+          <li>Wszystkie nasze pokoje wyposażone są w: TV-SAT, zestaw do parzenia herbaty/kawy, ręcznik.</li>
+          <li>Obiekt nie jest przystosowany do pobytów ze zwierzętami.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

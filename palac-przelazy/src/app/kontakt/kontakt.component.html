@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="details-1">
+    <div>
+      <h2>
+        Powiatowy Ośrodek Rehabilitacyjno – Wypoczynkowy „Pałac” sp. z o.o. w Przełazach
+      </h2>
+    </div>
+    <div class="details-1-1">
+      <div>
+        <mat-icon>pin_drop</mat-icon>
+      </div>
+      <div>
+        <p>{{ address.street }}</p>
+        <p>{{ address.postalCode }} {{ address.city }}</p>
+      </div>
+    </div>
+    <div>
+      <h4>Numer konta bankowego</h4>
+      <p>{{ bank.name }}</p>
+      <p>{{ bank.number }}</p>
+    </div>
+  </div>
+  <div class="details-1">
+    <div>
+      <h3>Turnusy</h3>
+    </div>
+    <div class="details-1-2">
+      <mat-icon>call</mat-icon>
+      <div>
+        <a [href]="batch.tel1.link">{{ batch.tel1.text }}</a>
+      </div>
+    </div>
+    <div class="details-1-2">
+      <mat-icon>call</mat-icon>
+      <a [href]="batch.tel2.link">{{ batch.tel2.text }}</a>
+    </div>
+    <div class="details-1-2">
+      <mat-icon>mail</mat-icon>
+      <a [href]="batch.email.link">{{ batch.email.text }}</a>
+    </div>
+  </div>
+  <div class="details-1">
+    <div>
+      <h3>Rehabilitacja</h3>
+    </div>
+    <div class="details-1-2">
+      <mat-icon>call</mat-icon>
+      <a [href]="rehabilitiation.tel.link">{{ rehabilitiation.tel.text }}</a>
+    </div>
+    <div class="details-1-2">
+      <mat-icon>mail</mat-icon>
+      <a [href]="rehabilitiation.mail.link">{{ rehabilitiation.mail.text }}</a>
+    </div>
+  </div>
+</div>

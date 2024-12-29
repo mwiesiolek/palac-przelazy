@@ -1,0 +1,117 @@
+@import "../variables";
+
+.container {
+  width: 100%;
+
+  mat-card {
+    max-width: 400px;
+    background: none;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .card {
+      background: #132A3CEB;
+      padding: 40px 20px;
+      border: 0;
+      border-radius: 0;
+      max-width: 100%;
+
+      mat-card-header {
+        padding: 0;
+      }
+
+      mat-card-title {
+        padding: 0;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: normal;
+        color: white;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding: 40px;
+
+    .content-1 {
+      margin: 0 0 50px 0;
+    }
+
+    .content-2 {
+      max-width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      gap: 40px;
+    }
+
+    .content-3 {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      gap: 20px;
+      max-width: 100%;
+      margin: 40px 0;
+
+      .content-3-1 {
+        max-width: 450px;
+
+        h1 {
+          font-size: 28px;
+        }
+
+        table {
+          tr {
+            td {
+              padding: 20px;
+              font-size: 18px;
+            }
+            .cell-details {
+              border-bottom: 1px solid #eaeaea;
+            }
+          }
+        }
+      }
+
+      .content-3-2, img {
+        min-width: 400px;
+        height: 600px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1233px) {
+  .container {
+    .content {
+      .content-3 {
+        min-width: 0;
+
+        .content-3-1 {
+          width: 100%;
+          max-width: 100%;
+          min-width: 0;
+        }
+        .content-3-2, img {
+          max-width: 100%;
+          width: 100%;
+          min-width: 0;
+        }
+      }
+    }
+  }
+}

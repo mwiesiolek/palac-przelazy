@@ -1,0 +1,92 @@
+@import "../variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    color: @orange-color;
+  }
+
+  mat-card {
+    max-width: 400px;
+    background: none;
+  }
+
+  .details-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 28px;
+    margin: 20px 20px;
+  }
+
+  .details-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 100px 0 0 0;
+    padding: 0 20px;
+
+    .details-3-1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      max-width: 550px;
+      color: white;
+    }
+
+    a {
+      background: @orange-color;
+      color: white;
+      border-radius: 5px;
+      font-size: 18px;
+      padding: 30px;
+    }
+  }
+
+  .details-5 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0 20px;
+
+    .details-5-1 {
+      max-width: 650px;
+
+      button {
+        border-radius: 5px;
+        color: black;
+        margin: 20px 0 40px 0;
+        font-size: 18px;
+        padding: 25px;
+      }
+
+      button:hover {
+        color: white;
+        border: 0;
+        background: @orange-color;
+      }
+
+      h2 {
+        line-height: 2;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

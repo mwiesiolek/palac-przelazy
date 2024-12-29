@@ -1,0 +1,51 @@
+<div class="container">
+  <header class="top">
+    <div class="header">
+      {{ batch.tel1.text }} · {{ batch.tel2.text }} · {{ batch.email.text }} · {{ address.street }}
+      , {{ address.postalCode }} {{ address.city }}
+    </div>
+    <div class="menu">
+      <a routerLink="/">
+        <img src="/palac-przelazy-logo-kolor.svg" alt="Palac przelazy logo" height="92" width="215">
+      </a>
+      <div>
+        <nav>
+          <ul>
+            <li><a routerLink="/turnusy-rehabilitacyjne" routerLinkActive="active">Turnusy rehabilitacyjne</a></li>
+            <li><a routerLink="/zabiegi-rehabilitacyjne" routerLinkActive="active">Zabiegi rehabilitacyjne</a></li>
+            <li><a routerLink="/pfron" routerLinkActive="active">PFRON</a></li>
+            <li><a routerLink="/atrakcje-w-poblizu" routerLinkActive="active">Atrakcje w pobliżu</a></li>
+            <li><a routerLink="/o-nas" routerLinkActive="active">O nas</a></li>
+            <li><a routerLink="/kontakt" routerLinkActive="active">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+  <footer>
+    <div class="bottom-1">
+      <nav>
+        <ul>
+          <li><a routerLink="/turnusy-rehabilitacyjne" routerLinkActive="active">Turnusy rehabilitacyjne</a></li>
+          <li><a routerLink="/zabiegi-rehabilitacyjne" routerLinkActive="active">Zabiegi rehabilitacyjne</a></li>
+          <li><a routerLink="/pfron" routerLinkActive="active">PFRON</a></li>
+        </ul>
+      </nav>
+    </div>
+    <app-contact></app-contact>
+    <div class="map">
+      <iframe aria-label="Przełazy 20 66-218 Lubrza"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.4205546589823!2d15.381160467714096!3d52.23195604660254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3036e444ba7008ef!2sO%C5%9Brodek%20rehabilitacyjno%20-%20wypoczynkowy!5e0!3m2!1sen!2spl!4v1656631002287!5m2!1sen!2spl"
+              title="Przełazy 20 66-218 Lubrza"
+      ></iframe>
+    </div>
+    <div class="bottom-2">
+      <div>
+        <p>realizacja: <a href="https://bizwebstudio.pl">bizwebstudio.pl</a></p>
+      </div>
+    </div>
+  </footer>
+</div>

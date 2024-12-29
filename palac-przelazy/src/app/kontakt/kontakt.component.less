@@ -1,0 +1,44 @@
+@import "../variables";
+
+mat-icon {
+  color: @orange-color;
+}
+
+.container {
+  margin: 0 0 50px 0;
+  padding: 0 20px;
+
+  p {
+    line-height: 1;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4D4D4D;
+  }
+
+  a:hover {
+    color: @orange-color;
+  }
+
+  .details-1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+
+    .details-1-1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .details-1-2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      padding: 5px 0;
+    }
+  }
+}
