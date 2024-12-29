@@ -37,15 +37,13 @@ jobs:
         with:
           node-version: 22
       - name: Install dependencies
-        working-directory: ./palac-przelazy
         run: npm install
       - name: Build Angular App
-        working-directory: ./palac-przelazy
         run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './palac-przelazy/dist/palac-przelazy/browser'
+          path: './dist/palac-przelazy/browser'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
