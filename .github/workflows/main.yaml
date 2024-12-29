@@ -40,6 +40,9 @@ jobs:
         run: npm install
       - name: Build Angular App
         run: npm run build
+      - name: Copy index.html and name it 404.html
+        working-directory: dist/palac-przelazy/browser
+        run: cp index.html 404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
