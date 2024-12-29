@@ -14,10 +14,13 @@ jobs:
         with:
           node-version: 22
       - name: Install Dependencies
-        run: cd palac-przelazy && npm install
+        working-directory: ./palac-przelazy
+        run: npm install
       - name: Build Angular App
+        working-directory: ./palac-przelazy
         run: npm run build
       - name: Deploy to gh pages
+        working-directory: ./palac-przelazy
         run: |
           npx angular-cli-ghpages --dir=dist/palac-przelazy
         env:
