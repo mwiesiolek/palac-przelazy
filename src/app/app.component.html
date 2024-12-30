@@ -26,7 +26,7 @@
     <router-outlet></router-outlet>
   </section>
   <footer>
-    <div class="bottom-1">
+    <div class="bottom-1" *ngIf="router.url != '/kontakt'">
       <nav>
         <ul>
           <li><a routerLink="/turnusy-rehabilitacyjne" routerLinkActive="active">Turnusy rehabilitacyjne</a></li>
