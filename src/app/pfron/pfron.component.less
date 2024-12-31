@@ -25,7 +25,6 @@
       padding: 40px 20px;
       border: 0;
       border-radius: 0;
-      max-width: 100%;
 
       mat-card-header {
         padding: 0;
@@ -37,7 +36,6 @@
         font-size: 38px;
         line-height: normal;
         color: white;
-        min-width: 400px;
       }
     }
   }
@@ -65,8 +63,8 @@
       justify-content: space-evenly;
 
       .content-1-1, img {
-        min-width: 500px;
-        height: 600px;
+        max-width: 500px;
+        height: 800px;
       }
 
       .content-1-2 {
@@ -78,13 +76,14 @@
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
+      gap: 20px;
 
       .content-2-1 {
         max-width: 500px;
       }
 
       .content-2-2, img {
-        min-width: 300px;
+        max-width: 700px;
         height: 400px;
       }
     }
@@ -94,23 +93,31 @@
 @media screen and (max-width: 1233px) {
   .container {
     .content {
+
       .content-1 {
-        min-width: 0;
+        max-height: 100%;
+        max-width: 100%;
+        gap: 20px;
+
+        .content-1-2 {
+          max-width: 100%;
+        }
 
         .content-1-1, .content-1-2, img {
-          max-width: 100%;
           width: 100%;
-          min-width: 0;
+          height: 100%;
         }
       }
 
       .content-2 {
-        min-width: 0;
+
+        .content-2-1 {
+          max-width: 100%;
+        }
 
         .content-2-1, .content-2-2, img {
-          max-width: 100%;
           width: 100%;
-          min-width: 0;
+          height: 100%;
         }
       }
     }

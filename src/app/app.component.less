@@ -42,6 +42,7 @@ iframe {
     list-style: none;
     display: flex;
     margin: 0;
+    padding: 0;
 
     li {
       display: flex;
@@ -131,13 +132,21 @@ footer {
 
     p {
      color: #cfcfcf;
-    };
+    }
   }
 }
 
 @media screen and (max-width: 1088px) {
   .header {
     display: none;
+  }
+
+  .map {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 15px;
   }
 
   .menu {
