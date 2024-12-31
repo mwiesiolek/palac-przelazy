@@ -132,6 +132,34 @@
         }
       }
     }
+
+    .content-5 {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      gap: 20px;
+      padding: 20px;
+      text-align: center;
+
+      .content-5-2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+        max-height: 400px;
+
+        @media screen and (max-width: 1259px) {
+          max-height: 100%;
+        }
+
+        .content-5-2-1, .content-5-2-2, iframe {
+          height: 400px;
+          width: 100%;
+          max-width: 600px;
+          border: 0;
+        }
+      }
+    }
   }
 }
 
