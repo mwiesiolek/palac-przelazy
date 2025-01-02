@@ -38,9 +38,9 @@ export class TurnusyRehabilitacyjneComponent {
       id: 'Turnus I',
       startDate: '4 maj 2025',
       endDate: '17 maj 2025',
-      pfronParticipant: '2500zł',
-      pfronCaregiver: '2390zł',
-      private: '2390zł'
+      pfronParticipant: '2390zł',
+      pfronCaregiver: '2290zł',
+      private: '2290zł'
     },
     {
       id: 'Turnus II',
