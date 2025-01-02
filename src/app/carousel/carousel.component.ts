@@ -6,7 +6,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {RouterLink} from "@angular/router";
 import {NgForOf} from "@angular/common";
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import {interval, Subject, takeUntil, tap} from 'rxjs';
+import {interval, repeat, Subject, takeUntil, tap} from 'rxjs';
 
 interface Item {
   title: string;
@@ -74,16 +74,18 @@ export class CarouselComponent implements OnInit, OnDestroy {
     }
   ];
 
-  destroy$ = new Subject<string>();
+  stop$ = new Subject<void>();
+  start$ = new Subject<void>();
 
   ngOnDestroy(): void {
-    this.destroy$.next('');
-    this.destroy$.complete();
+    this.stop$.next();
+    this.stop$.complete();
   }
 
   ngOnInit(): void {
-    interval(5000).pipe(
-      takeUntil(this.destroy$),
+    interval(10000).pipe(
+      takeUntil(this.stop$),
+      repeat({delay: () => this.start$}),
       tap(() => {
         let current = this.items.find(i => i.slideControl === 'in');
         if (current) this.next(current);
@@ -92,6 +94,8 @@ export class CarouselComponent implements OnInit, OnDestroy {
   }
 
   previous(current: Item) {
+    this.restartInterval();
+
     current.slideControl = 'out';
     if (current.id === 1) {
       this.items[this.items.length - 1].slideControl = 'in';
@@ -102,6 +106,8 @@ export class CarouselComponent implements OnInit, OnDestroy {
   }
 
   next(current: Item) {
+    this.restartInterval();
+
     current.slideControl = 'out';
     if (current.id === this.items[this.items.length - 1].id) {
       this.items[0].slideControl = 'in';
@@ -109,5 +115,10 @@ export class CarouselComponent implements OnInit, OnDestroy {
       let newItem = this.items.find(i => i.id === current.id + 1);
       if (newItem) newItem.slideControl = 'in';
     }
+  }
+
+  private restartInterval() {
+    this.stop$.next();
+    this.start$.next();
   }
 }
