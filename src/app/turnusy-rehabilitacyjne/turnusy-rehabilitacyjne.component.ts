@@ -31,6 +31,7 @@ interface BatchPrice {
 export class TurnusyRehabilitacyjneComponent {
   batch = environment.batch;
   bank = environment.bank;
+  newBank = environment.newBank;
   headers: string[] = ['', 'Data rozpoczęcia', 'Data zakończenia', 'Cena z dofinansowaniem PFRON - uczestnik',
     'Cena z dofinansowaniem PFRON - opiekun', 'Cena za pobyt prywatny bez zabiegów'];
   batchPrices: BatchPrice[] = [

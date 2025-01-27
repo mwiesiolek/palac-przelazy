@@ -31,6 +31,10 @@ export const environment = {
     name: 'Santander Bank Polska S.A. 1 oddział w Świebodzinie',
     number: '14 1090 1593 0000 0001 1486 4454'
   },
+  newBank: {
+    name: 'PKO Bank Polski',
+    number: '86 1020 5402 0000 0102 0563 6685'
+  },
   address: {
     street: 'Przełazy 20',
     postalCode: '66-218',

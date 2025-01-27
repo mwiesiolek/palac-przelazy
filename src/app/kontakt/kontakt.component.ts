@@ -11,6 +11,7 @@ import {Title} from '@angular/platform-browser';
 })
 export class KontaktComponent {
   bank = environment.bank;
+  newBank = environment.newBank;
   batch = environment.batch;
   rehabilitiation = environment.rehabilitiation;
   address = environment.address;
