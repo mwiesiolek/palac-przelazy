@@ -1,0 +1,36 @@
+@import "../variables";
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: 0;
+
+  div {
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  ul {
+    list-style-type: none;
+    font-size: 18px;
+
+    li {
+      line-height: 2;
+      color: @grey-color;
+      text-wrap: wrap;
+    }
+  }
+
+  a {
+    color: @grey-color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: @orange-color;
+  }
+}

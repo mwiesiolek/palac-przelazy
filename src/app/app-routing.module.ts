@@ -7,6 +7,7 @@ import {PfronComponent} from "./pfron/pfron.component";
 import {TurnusyRehabilitacyjneComponent} from "./turnusy-rehabilitacyjne/turnusy-rehabilitacyjne.component";
 import {ZabiegiRehabilitacyjneComponent} from "./zabiegi-rehabilitacyjne/zabiegi-rehabilitacyjne.component";
 import {HomeComponent} from "./home/home.component";
+import {BipComponent} from './bip/bip.component';
 
 
 export const routes: Routes = [
@@ -37,6 +38,10 @@ export const routes: Routes = [
   {
     path: 'zabiegi-rehabilitacyjne',
     component: ZabiegiRehabilitacyjneComponent
+  },
+  {
+    path: 'bip',
+    component: BipComponent
   }
 ];
 
