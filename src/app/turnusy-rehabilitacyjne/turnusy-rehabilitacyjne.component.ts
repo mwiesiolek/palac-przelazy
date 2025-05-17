@@ -47,7 +47,7 @@ export class TurnusyRehabilitacyjneComponent {
       id: 'Turnus II',
       startDate: '18 maj 2025',
       endDate: '31 maj 2025',
-      pfronParticipant: '2500zł',
+      pfronParticipant: '2500zł*',
       pfronCaregiver: '2390zł',
       private: '2390zł'
     },
@@ -55,7 +55,7 @@ export class TurnusyRehabilitacyjneComponent {
       id: 'Turnus III',
       startDate: '1 czerwiec 2025',
       endDate: '14 czerwiec 2025',
-      pfronParticipant: '2500zł',
+      pfronParticipant: '2500zł*',
       pfronCaregiver: '2390zł',
       private: '2390zł'
     },
@@ -63,7 +63,7 @@ export class TurnusyRehabilitacyjneComponent {
       id: 'Turnus IV',
       startDate: '15 czerwiec 2025',
       endDate: '28 czerwiec 2025',
-      pfronParticipant: '2500zł',
+      pfronParticipant: '2500zł*',
       pfronCaregiver: '2390zł',
       private: '2390zł'
     },
@@ -119,7 +119,7 @@ export class TurnusyRehabilitacyjneComponent {
       id: 'Turnus XI',
       startDate: '21 wrzesień 2025',
       endDate: '4 październik 2025',
-      pfronParticipant: '2500zł',
+      pfronParticipant: '2500zł*',
       pfronCaregiver: '2390zł',
       private: '2390zł'
     }
