@@ -38,8 +38,10 @@ jobs:
           node-version: 22
       - name: Install dependencies
         run: npm install
-      - name: Build Angular App
+      - name: Build Angular App (root)
         run: npm run build
+      - name: Build Angular App (turnusy-rehabilitacyjne)
+        run: npm run build --output-path turnusy-rehabilitacyjne
       - name: Copy index.html and name it 404.html
         working-directory: dist/palac-przelazy/browser
         run: cp index.html 404.html
