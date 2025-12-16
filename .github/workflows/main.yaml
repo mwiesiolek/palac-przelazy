@@ -47,6 +47,18 @@ jobs:
         run: cp -r dist/palac-przelazy/browser _sites
       - name: Create turnusy-rehabilitacyjne subfolder
         run: cp -r dist/palac-przelazy/browser _sites/turnusy-rehabilitacyjne
+      - name: Create zabiegi-rehabilitacyjne subfolder
+        run: cp -r dist/palac-przelazy/browser _sites/zabiegi-rehabilitacyjne
+      - name: Create pfron subfolder
+        run: cp -r dist/palac-przelazy/browser _sites/pfron
+      - name: Create atrakcje-w-poblizu subfolder
+        run: cp -r dist/palac-przelazy/browser _sites/atrakcje-w-poblizu
+      - name: Create o-nas subfolder
+        run: cp -r dist/palac-przelazy/browser _sites/o-nas
+      - name: Create bip subfolder
+        run: cp -r dist/palac-przelazy/browser _sites/bip
+      - name: Create kontakt subfolder
+        run: cp -r dist/palac-przelazy/browser _sites/kontakt
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
