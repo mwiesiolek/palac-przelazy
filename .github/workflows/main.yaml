@@ -43,10 +43,14 @@ jobs:
       - name: Copy index.html and name it 404.html
         working-directory: dist/palac-przelazy/browser
         run: cp index.html 404.html
+      - name: Create root subfolder
+        run: cp -r dist/palac-przelazy/browser _sites
+      - name: Create turnusy-rehabilitacyjne subfolder
+        run: cp -r dist/palac-przelazy/browser _sites/turnusy-rehabilitacyjne
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/palac-przelazy/browser'
+          path: './_sites'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
