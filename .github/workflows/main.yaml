@@ -43,8 +43,6 @@ jobs:
       - name: Copy index.html and name it 404.html
         working-directory: dist/palac-przelazy/browser
         run: cp index.html 404.html
-      - name: test
-        run: cp -r dist/palac-przelazy/browser dist/palac-przelazy/browser/turnusy-rehabilitacyjne
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
