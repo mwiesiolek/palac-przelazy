@@ -45,7 +45,7 @@ jobs:
         run: cp index.html 404.html
       - name: Copy to turnusy-rehabilitacyjne folder
         working-directory: dist/palac-przelazy/browser
-        run: ls -lf ./
+        run: cp -r . turnusy-rehabilitacyjne
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
