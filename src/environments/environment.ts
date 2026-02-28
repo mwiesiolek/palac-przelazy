@@ -13,7 +13,7 @@ export const environment = {
       link: 'mailto:palac.przelazy@gmail.com'
     },
     codes: {
-      organiser: 'OR/08/1/23',
+      organiser: 'OR/08/1/26',
       resort: 'OD/08/1/23'
     }
   },
