@@ -14,7 +14,7 @@ export const environment = {
     },
     codes: {
       organiser: 'OR/08/1/26',
-      resort: 'OD/08/1/23'
+      resort: 'OD/08/1/26'
     }
   },
   rehabilitiation: {
