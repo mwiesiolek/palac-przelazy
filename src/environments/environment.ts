@@ -28,7 +28,7 @@ export const environment = {
     }
   },
   bank: {
-    name: 'Santander Bank Polska S.A. 1 oddział w Świebodzinie',
+    name: 'Erste Bank Polska S.A. 1 oddział w Świebodzinie',
     number: '14 1090 1593 0000 0001 1486 4454'
   },
   newBank: {
